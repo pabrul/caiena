@@ -1,75 +1,39 @@
-# Nuxt 3 Minimal Starter
+# GitHub User Search App 🌐
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+## 📝 Descrição
 
-## Setup
+Este projeto é uma aplicação Nuxt 3 com Vue 3, TypeScript, Pinia e Vitest. Ele permite a busca e visualização de usuários do GitHub, exibindo resultados paginados e com possibilidade de busca e filtros.
 
-Make sure to install the dependencies:
+## ✨ Funcionalidades
 
-```bash
-# npm
-npm install
+- **Consulta de Usuários do GitHub**: Integração com a API do GitHub para busca de usuários.
+- **Paginação**: Resultados paginados com 20 usuários por página.
+- **Exibição de Informações dos Usuários**: Mostra a foto, nome, e um link de acesso rápido ao perfil no GitHub.
+- **Tratamento de Buscas sem Resultados**: Exibe mensagem apropriada quando nenhum usuário é encontrado.
+- **Gerenciamento de Estados**: Tratamento de estados de loading e erros.
+- **Componente de Paginação**: Navegação entre diferentes páginas de resultados.
+- **Barra de Busca**: Permite a entrada de termos de busca pelo usuário.
 
-# pnpm
-pnpm install
+## 🚀 Tecnologias Utilizadas
 
-# yarn
-yarn install
+- Nuxt 3
+- Vue 3 com Script Setup e Composition API
+- TypeScript
+- Pinia
+- Vitest
+- Integração com a API do GitHub
 
-# bun
-bun install
-```
+## ⚙️ Instalação e Execução
 
-## Development Server
+1. **Clone o Repositório**
+2. **Instale as Dependências**
+3. **Execute o Projeto Localmente**
+4. **Executar Testes**
 
-Start the development server on `http://localhost:3000`:
+## 🤝 Contribuição
 
-```bash
-# npm
-npm run dev
+Contribuições são sempre bem-vindas. Por favor, leia o guia de contribuição para saber como contribuir para o projeto.
 
-# pnpm
-pnpm run dev
+## 📜 Licença
 
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+Este projeto está sob a [LICENÇA] (incluir link para a licença).
