@@ -13,8 +13,6 @@
 </template>
 
 <script setup lang="ts">
-import { defineProps } from "vue";
-
 const props = defineProps({
   avatarUrl: String,
   altText: String,

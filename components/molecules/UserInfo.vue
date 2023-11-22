@@ -18,8 +18,6 @@
 </template>
 
 <script setup lang="ts">
-import { defineProps } from "vue";
-
 const props = defineProps({
   userName: String,
   userUrl: String,
