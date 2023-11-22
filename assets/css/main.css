@@ -4,5 +4,6 @@
 @import "tailwindcss/utilities";
 
 body {
+  background-color: #000;
   font-family: "Source Code Pro", monospace;
 }
