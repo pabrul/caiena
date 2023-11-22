@@ -3,6 +3,18 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
 
+  app: {
+    head: {
+      title: "Caiena - GitHub Search",
+      meta: [{ name: "description", content: "Caiena - GitHub Search" }],
+      bodyAttrs: {
+        class: "caiena-github",
+      },
+      charset: "utf-8",
+      viewport: "width=device-width, initial-scale=1",
+    },
+  },
+
   modules: ["nuxt-icon", "@pinia/nuxt"],
 
   icon: {
