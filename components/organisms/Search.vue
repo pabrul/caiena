@@ -7,7 +7,7 @@
       <TypewriterEffect
         text="À procura de alguém no universo do GitHub? Basta pesquisar (:"
         textColor="text-green-500"
-        textSize="md:text-5xl text-xl "
+        textSize="md:text-4xl text-xl "
         class="text-center z-100 leading-8 bg-gradient-to-r from-blue-200 via-blue-500 to-indigo-600 inline-block text-transparent bg-clip-text"
       />
     </div>
