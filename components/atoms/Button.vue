@@ -25,7 +25,7 @@ import { defineProps, computed } from "vue";
 const props = defineProps({
   text: {
     type: String,
-    default: "Buscar",
+    default: "",
   },
   color: {
     type: String,
@@ -57,8 +57,8 @@ const colorClasses = computed(() => {
   switch (props.color) {
     case "green":
       return "bg-green-500";
-    case "blue":
-      return "bg-blue-500";
+    case "indigo":
+      return "bg-indigo-500";
     default:
       return "bg-gray-800";
   }
