@@ -1,20 +1,33 @@
 <template>
-  <div class="py-8 my-8 px-8 mx-8 search-bar">
+  <div class="md:py-8 md:my-8 md:px-8 md:mx-8 p-4 search-bar">
     <form @submit.prevent="performSearch">
       <div
-        class="flex items-center p-6 space-x-6 bg-white rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-500 font-mono"
+        class="flex max-md:flex-col gap-4 items-center p-6 md:space-x-6 bg-indigo-500 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-500 font-mono"
       >
         <Input
           v-model="searchQuery"
           placeholder="Pesquisar por usuario"
           icon="twemoji:rocket"
           width="full"
+          class=""
         />
+
         <Button
           :text="loading ? '' : 'Buscar'"
           :icon="'twemoji:magnifying-glass-tilted-left'"
           :iconPosition="'left'"
           :loading="loading"
+          class="max-md:w-full"
+        />
+
+        <Button
+          :text="loading ? '' : 'Limpar'"
+          :icon="'🧹'"
+          :iconPosition="'left'"
+          :loading="loading"
+          :color="'green'"
+          class="max-md:w-full"
+          @click="reset"
         />
       </div>
     </form>
@@ -44,6 +57,11 @@ async function performSearch() {
       loadingStore.hide();
     }
   }
+}
+
+function reset(event) {
+  store.resetSearch();
+  searchQuery.value = ""; // Limpar o valor do input de pesquisa
 }
 </script>
 
