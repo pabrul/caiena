@@ -1,9 +1,14 @@
 <!-- components/atoms/Avatar.vue -->
 <template>
   <div
-    class="absolute -bottom-6 flex h-[87px] w-[87px] items-center justify-center rounded-full border-[4px] border-solid border-red bg-pink-400 dark:!border-navy-700"
+    class="absolute border-indigo-300 -bottom-6 flex h-[87px] w-[87px] items-center justify-center rounded-full border-[4px] border-solid border-red"
   >
-    <img :src="avatarUrl" :alt="altText" class="h-full w-full rounded-full" />
+    <img
+      loading="lazy"
+      :src="avatarUrl"
+      :alt="altText"
+      class="h-full w-full rounded-full"
+    />
   </div>
 </template>
 

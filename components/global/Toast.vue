@@ -2,7 +2,7 @@
 <template>
   <div v-if="toastStore.isVisible" :class="`toast ${bgColor}`">
     <div
-      class="max-w-xs rounded-md shadow-lg mb-3 ml-3 p-4 absolute bottom-0 right-0 w-full mr-4 flex justify-between flex-row font-mono"
+      class="md:max-w-xs rounded-md shadow-lg mb-3 md:ml-3 p-4 absolute bottom-0 right-0 w-full md:mr-4 flex justify-between flex-row font-mono"
       :class="bgColor"
     >
       <Icon
